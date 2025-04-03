@@ -26,7 +26,7 @@ public partial class ManyworkerContext : DbContext
         modelBuilder.Entity<Manyworker>(entity =>
         {
             entity
-                .HasNoKey()
+                //.HasNoKey()
                 .ToTable("manyworker");
 
             entity.Property(e => e.Email).HasColumnName("email");

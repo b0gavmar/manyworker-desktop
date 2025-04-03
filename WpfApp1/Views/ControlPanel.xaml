@@ -12,8 +12,8 @@
         <ListBox ItemsSource="{Binding Workers}" SelectedItem="{Binding CurrentWorker, Mode=TwoWay}" Height="200">
             
         </ListBox>
-        <Button Content="Delete" Command="{Binding RemoveWorkerCommand}" CommandParameter="{Binding currentWorker}"></Button>
+        <Button Content="Delete" Command="{Binding RemoveWorkerCommand}"></Button>
         <TextBox Text="{Binding AddedPay, Mode=TwoWay}"></TextBox>
-        <Button Content="Add" Command="{Binding AddPayCommand}"></Button>
+        <Button Content="Add" Command="{Binding PayWorkerCommand}"></Button>
     </StackPanel>
 </UserControl>
